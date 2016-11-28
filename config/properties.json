@@ -1,0 +1,12 @@
+{
+  "default": {
+    "apiUser": "insert api user name here",
+    "apiPassword": "insert api password here",
+    "host": "http://localhost:3000"
+  },
+  "ci": {
+    "apiUser": "{ciApiUser}",
+    "apiPassword": "{ciApiPassword}",
+    "host": "http://{ciWebHost}:{ciWebPort}/api/xxx"
+  }
+}
