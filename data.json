@@ -755,6 +755,12 @@
       "body": "bar",
       "userId": 1,
       "id": 127
+    },
+    {
+      "title": "foo",
+      "body": "bar",
+      "userId": 1,
+      "id": 128
     }
   ],
   "comments": [
