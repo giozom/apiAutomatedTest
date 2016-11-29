@@ -1,7 +1,7 @@
 describe('@get', function () {
 
     //Using assert method
-    it('should return a 200 OK status code for PostID 1', function (done) {
+    it('should return a 200 OK status code for User ID 1', function (done) {
         utils.httpGET('/users/1', {})
             .set('content-type', 'application/json; charset=utf-8')
             .expect(function (res) {
@@ -57,7 +57,7 @@ describe('@get', function () {
     });
 
     //GET All Users
-    it('should return a 200 OK status code for GET /users using expect method', function (done) {
+    it('should return a 200 OK status code for GET All /users using expect method', function (done) {
         utils.httpGET('/users/', {})
             .set('content-type', 'application/json; charset=utf-8')
             // .expect(function (res) {

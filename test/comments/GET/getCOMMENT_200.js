@@ -43,7 +43,7 @@ describe('@get', function () {
     });
 
     //GET All Comments
-    it('should return a 200 OK status code for GET /comments using expect method', function (done) {
+    it('should return a 200 OK status code for GET All /comments using expect method', function (done) {
         utils.httpGET('/comments/', {})
             .set('content-type', 'application/json; charset=utf-8')
             // .expect(function (res) {
