@@ -7,9 +7,8 @@
     "directories": null
   },
   "script": [
-    "cd test",
     "npm install",
-    "npm test",
+    "npm test"
   ],
   "after_success": null,
   "group": "stable",
