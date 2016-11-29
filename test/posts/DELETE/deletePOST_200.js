@@ -1,4 +1,4 @@
-describe('200 DELETE /posts/101', function () {
+describe('@delete', function () {
 
      it('should return a 200 code after deleting fake postId 100', function () {
          utils.httpDELETE('/posts/101', {})
