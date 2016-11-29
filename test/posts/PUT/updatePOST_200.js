@@ -1,4 +1,4 @@
-describe('200 PUT /posts/1', function () {
+describe('@put', function () {
 
      it('should return a 200 code after updating postId 1', function (done) {
         utils.httpPUT('/posts/20', {})
