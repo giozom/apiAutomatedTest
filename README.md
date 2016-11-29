@@ -4,14 +4,20 @@
 ## Installing json-server
 * npm install -g json-server
 
-## You can view DB current state
-* http://localhost:3000/db
-
 ## Running local json server 
 * $ json-server <data.json> (where data.json is the api collection)
 * $ <code>json-server data.json</code>
 
-## Running the tests
+## You can view DB current state
+* http://localhost:3000/db
+
+## Resources the JSON Server loaded
+* http://localhost:3000/
+* http://localhost:3000/posts
+* http://localhost:3000/users
+* http://localhost:3000/comments
+
+## Running the tests (~/apiAutomatedTest/test/)
 * <code>npm test</code>
 
 ## Reporting (HTML and JSON)
