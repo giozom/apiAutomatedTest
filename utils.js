@@ -84,9 +84,6 @@ var utils = {
 
     httpPUT: function httpPUT(url, body, additionalParams) {
 
-        //console.log('PUT: ' + url + ' with additional params: ' + JSON.stringify(additionalParams) + ' with content: ' + body);
-        //winston.info('PUT: ' + url + ' with additional params: ' + JSON.stringify(additionalParams) + ' with content: ' + body);
-
         var acceptHeader, alternateUsername, alternatePassword;
         if (additionalParams != undefined) {
             if (additionalParams.accept != undefined) {
@@ -111,8 +108,6 @@ var utils = {
     },
 
     httpDELETE: function httpDELETEGeneral(url, additionalParams) {
-
-        //winston.info('DELETEGeneral: ' + url + ' with additional params: ' + JSON.stringify(additionalParams));
 
         var acceptHeader, alternateUsername, alternatePassword;
         if (additionalParams != undefined) {
