@@ -9,7 +9,7 @@ describe('200 GET /posts/1', function () {
                 console.log(response);
                 return assert.deepEqual(response,
                     {
-                        "id": 1,
+                        "id": "1",
                         "title": "foo",
                         "body": "bar",
                         "userId": 1
@@ -30,7 +30,7 @@ describe('200 GET /posts/1', function () {
                 expect(response).to.have.property('title');
                 expect(response).to.have.property('body');
                 expect(response).to.have.property('userId');
-                expect(response.id).to.equal(1);
+                expect(response.id).to.equal('1');
             })
             .expect(200, done);
     });
