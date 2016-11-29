@@ -17,9 +17,16 @@
 * http://localhost:3000/users
 * http://localhost:3000/comments
 
-## Running the tests 
+## Running all tests 
 * Go to <code>~/apiAutomatedTest/test/</code>
-* Type <code>npm test</code>
+* Type <code>npm run test</code>
+
+## Running specific tests 
+* Go to <code>~/apiAutomatedTest/test/</code>
+* Type <code>npm run test:get</code> will run all GET tests
+* Type <code>npm run test:post</code> will run all POST tests
+* Type <code>npm run test:put</code> will run all PUT tests
+* Type <code>npm run test:delete</code> will run all DELETE tests
 
 ## Reporting (HTML and JSON)
 * To view report go to <code>/apiAutomatedTest/mochawesome-reports/mochawesome.html<code>
