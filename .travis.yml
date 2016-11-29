@@ -1,1 +1,16 @@
-script: npm run test
+{
+  "language": "node_js",
+  "sudo": true,
+  "node_js": "stable",
+  "before_install": null,
+  "cache": {
+    "directories": null
+  },
+  "script": [
+    "npm test",
+  ],
+  "after_success": null,
+  "group": "stable",
+  "dist": "precise",
+  "os": "linux"
+}
