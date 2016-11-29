@@ -1,1 +1,4 @@
 .idea/workspace.xml
+mochawesome-reports/mochawesome.html
+mochawesome-reports/mochawesome.json
+data.json
