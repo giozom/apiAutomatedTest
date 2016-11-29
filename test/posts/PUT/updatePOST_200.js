@@ -13,7 +13,7 @@ describe('@put', function () {
             .expect('content-type', 'application/json; charset=utf-8')
             .expect(function (res) {
                 const response = res.body;
-                console.log(response);
+                //console.log(response);
                 expect(response.id).to.equal('20');
                 expect(response.title).to.equal('candy crush');
                 expect(response.body).to.equal('sodalicious juicy');
@@ -37,7 +37,7 @@ describe('@put', function () {
             .expect('content-type', 'application/json; charset=utf-8')
             .expect(function (res) {
                 const response = res.body;
-                console.log(response);
+                //console.log(response);
                 expect(response.id).to.equal('1');
                 expect(response.title).to.equal('foo');
                 expect(response.body).to.equal('bar');

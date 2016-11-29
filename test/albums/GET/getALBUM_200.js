@@ -1,5 +1,5 @@
 
-describe.only('@get', function () {
+describe('@get', function () {
 
     //Using assert method
     it('should return a 200 OK status code for Album ID 1', function (done) {
@@ -7,7 +7,7 @@ describe.only('@get', function () {
             .set('content-type', 'application/json; charset=utf-8')
             .expect(function (res) {
                 const response = res.body;
-                console.log(response);
+                //console.log(response);
                 return assert.deepEqual(response,
                     {
                         "userId": 1,
@@ -24,8 +24,8 @@ describe.only('@get', function () {
         utils.httpGET('/albums/1', {})
             .set('content-type', 'application/json; charset=utf-8')
             .expect(function (res) {
-                const response = res.body;
-                console.log(response);
+                 const response = res.body;
+                // console.log(response);
                 expect(response).to.have.property('userId');
                 expect(response).to.have.property('id');
                 expect(response).to.have.property('title');
@@ -42,10 +42,10 @@ describe.only('@get', function () {
     it('should return a 200 OK status code for GET /comments using expect method', function (done) {
         utils.httpGET('/albums/', {})
             .set('content-type', 'application/json; charset=utf-8')
-            .expect(function (res) {
-                const response = res.body;
-                console.log(response);
-            })
+            // .expect(function (res) {
+            //     const response = res.body;
+            //     console.log(response);
+            // })
             .expect(200, done);
     });
 

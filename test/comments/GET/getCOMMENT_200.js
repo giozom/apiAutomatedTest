@@ -7,7 +7,7 @@ describe('@get', function () {
             .set('content-type', 'application/json; charset=utf-8')
             .expect(function (res) {
                 const response = res.body;
-                console.log(response);
+                //console.log(response);
                 return assert.deepEqual(response,
                     {
                         "postId": 1,
@@ -27,7 +27,7 @@ describe('@get', function () {
             .set('content-type', 'application/json; charset=utf-8')
             .expect(function (res) {
                 const response = res.body;
-                console.log(response);
+                //console.log(response);
                 expect(response).to.have.property('postId');
                 expect(response).to.have.property('id');
                 expect(response).to.have.property('name');
@@ -46,10 +46,10 @@ describe('@get', function () {
     it('should return a 200 OK status code for GET /comments using expect method', function (done) {
         utils.httpGET('/comments/', {})
             .set('content-type', 'application/json; charset=utf-8')
-            .expect(function (res) {
-                const response = res.body;
-                console.log(response);
-            })
+            // .expect(function (res) {
+            //     const response = res.body;
+            //     console.log(response);
+            // })
             .expect(200, done);
     });
 

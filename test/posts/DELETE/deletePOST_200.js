@@ -13,7 +13,7 @@ describe('@delete', function () {
             .expect('content-type', 'application/json; charset=utf-8')
             .expect(function (res) {
                 const response = res.body;
-                console.log(response)
+                //console.log(response)
                 return assert.deepEqual(response,
                     {} //return empty response
                 );
