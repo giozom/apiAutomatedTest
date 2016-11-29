@@ -1,4 +1,4 @@
-.idea/workspace.xml
-mochawesome-reports/mochawesome.html
-mochawesome-reports/mochawesome.json
-data.json
+.idea
+*.xml
+mochawesome-reports
+*.json
