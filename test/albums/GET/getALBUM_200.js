@@ -1,5 +1,5 @@
 
-describe('@get', function () {
+describe.only('@get', function () {
 
     //Using assert method
     it('should return a 200 OK status code for Album ID 1', function (done) {
@@ -19,7 +19,7 @@ describe('@get', function () {
             .expect(200, done);
     });
 
-    //Using expect method to GET comment ID 1
+    //Using expect method to GET Album ID 1
     it('should return a 200 OK status code for Album ID 1 using expect method', function (done) {
         utils.httpGET('/albums/1', {})
             .set('content-type', 'application/json; charset=utf-8')
@@ -40,7 +40,7 @@ describe('@get', function () {
 
     //GET All Albums
     it('should return a 200 OK status code for GET /comments using expect method', function (done) {
-        utils.httpGET('/comments/', {})
+        utils.httpGET('/albums/', {})
             .set('content-type', 'application/json; charset=utf-8')
             .expect(function (res) {
                 const response = res.body;
