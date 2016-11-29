@@ -1,8 +1,11 @@
 # api-tests
  A JS REST Framework using supertest and other cool libraries
-
+ 
 ## Installing json-server
 * npm install -g json-server
+
+## You can view DB current state
+* http://localhost:3000/db
 
 ## Running local json server 
 * $ json-server <data.json> (where data.json is the api collection)
