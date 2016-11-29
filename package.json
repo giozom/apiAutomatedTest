@@ -4,6 +4,10 @@
   "description": "API Verification for Typicode running locally",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --reporter mochawesome",
+    "test:get": "./node_modules/mocha/bin/mocha --grep @get --reporter mochawesome",
+    "test:post": "./node_modules/mocha/bin/mocha --grep @post --reporter mochawesome",
+    "test:put": "./node_modules/mocha/bin/mocha --grep @put --reporter mochawesome",
+    "test:delete": "./node_modules/mocha/bin/mocha --grep @delete --reporter mochawesome",
     "ciTest": "NODE_ENV=ci multi='spec=- mocha-junit-reporter=test-results.xml' ./node_modules/mocha/bin/mocha --reporter mocha-multi"
   },
   "repository": {
@@ -30,7 +34,6 @@
     "supertest": "1.1.0",
     "supertest-as-promised": "2.0.2",
     "validator": "4.7.1",
-    "winston": "2.1.1",
     "xmldoc": "0.3.2"
   },
   "devDependencies": {
