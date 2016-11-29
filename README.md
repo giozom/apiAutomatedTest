@@ -21,10 +21,10 @@
 * <code>npm test</code>
 
 ## Reporting (HTML and JSON)
-* /api-tests/mochawesome-reports/mochawesome.html
+* /apiAutomatedTest/mochawesome-reports/mochawesome.html
 
 ## Screenshots
-![Alt text](https://github.com/giozom/api-tests/blob/master/HTMLReport.png "HTML Report")
+![Alt text](https://github.com/giozom/apiAutomatedTest/blob/master/HTMLReport.png "HTML Report")
 
 ## Failed Test
-![Alt text](https://github.com/giozom/api-tests/blob/master/HTMLReport_FailedTest.png "HTML Report")
+![Alt text](https://github.com/giozom/apiAutomatedTest/blob/master/HTMLReport_FailedTest.png "HTML Report")
