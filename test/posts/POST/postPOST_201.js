@@ -1,5 +1,5 @@
 
-describe.skip('@post', function () {
+describe('@post', function () {
 
     it('should return a 201 code after posting', function (done) {
         utils.httpPOST('/posts', {})

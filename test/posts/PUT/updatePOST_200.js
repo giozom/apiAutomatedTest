@@ -2,7 +2,7 @@
 
 var hooks = require('../../hooks.js');
 
-describe.skip('@put', function () {
+describe('@put', function () {
 
 let post;
 
@@ -21,7 +21,7 @@ let post;
         utils.httpPUT(`/posts/${post.id}`, {})
             .send(
                 {
-                    id: post.id,
+                    id: `${post.id}`,
                     title: 'candy crush',
                     body: 'sodalicious juicy',
                     userId: 1

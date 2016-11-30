@@ -1,7 +1,7 @@
 
 var hooks = require('../../hooks.js');
 
-describe.skip('@delete', function () {
+describe('@delete', function () {
 
     let post;
 

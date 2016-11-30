@@ -9,7 +9,7 @@ createPost: function(){
             utils.httpPOST(url, {})
                 .send({
                     title: `${randomString}`,
-                    body: `${randomString2}`,
+                //   body: `${randomString2}`,
                     userId: 1
                 })
                 .expect('content-type', 'application/json; charset=utf-8')

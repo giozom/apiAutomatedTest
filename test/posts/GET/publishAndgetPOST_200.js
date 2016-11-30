@@ -2,7 +2,7 @@
 
 var hooks = require('../../hooks.js');
 
-describe.skip('@get', function () {
+describe('@get', function () {
     let post;
 
     describe('Create POST', function () {
@@ -29,7 +29,7 @@ describe.skip('@get', function () {
                         console.log(response);
                         expect(response).to.have.property('id');
                         expect(response).to.have.property('title');
-                        expect(response).to.have.property('body');
+                        //expect(response).to.have.property('body');
                         expect(response).to.have.property('userId');
                         //Assert Post ID created is equal to the one return in response
                         expect(response.id).to.equal(post.id);
