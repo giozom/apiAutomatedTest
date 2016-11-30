@@ -7,6 +7,8 @@
     "directories": null
   },
   "script": [
+    "npm install -g json-server",
+    "json-server data.json",
     "npm install && npm test"
   ],
   "after_success": null,
