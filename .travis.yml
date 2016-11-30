@@ -8,10 +8,9 @@
   },
   "script": [
     "npm install -g json-server",
-    "json-server data.json",
-    "npm install && npm test"
+    "json-server data.json"
   ],
-  "after_success": null,
+  "after_success": "npm install && npm test",
   "group": "stable",
   "dist": "precise",
   "os": "linux"
