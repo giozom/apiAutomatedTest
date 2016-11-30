@@ -1,24 +1,18 @@
 module.exports = {
 
-    createPost: function(){
+createPost: function(){
         return new Promise(function (resolve, reject){
+            var randomString = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 9);
+            var randomString2 = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 5);
+
             const url = '/posts';
             utils.httpPOST(url, {})
                 .send({
-                    title: 'foo',
-                    body: 'bar',
+                    title: `${randomString}`,
+                    body: `${randomString2}`,
                     userId: 1
                 })
                 .expect('content-type', 'application/json; charset=utf-8')
-                .expect(function (res) {
-                    const response = res.body;
-                    console.log(response);
-                    expect(response.title).to.equal('foo');
-                    expect(response.body).to.equal('bar');
-                    expect(response.userId).to.equal(1);
-                    expect(response).to.have.property('id');
-
-                })
                 .expect(201)
                 .end(function (err,res) {
 
