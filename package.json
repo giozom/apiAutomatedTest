@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "xxx"
+    "url": "https://github.com/giozom/apiAutomatedTest"
   },
   "license": "ISC",
   "dependencies": {
@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "mochawesome": "^1.4.0",
+    "moment": "^2.14.1",
     "supertest": "^1.1.0"
   }
 }

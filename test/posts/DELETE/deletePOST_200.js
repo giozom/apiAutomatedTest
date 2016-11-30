@@ -1,8 +1,7 @@
-'use strict';
 
 var hooks = require('../../hooks.js');
 
-describe('@delete', function () {
+describe.skip('@delete', function () {
 
     let post;
 
@@ -17,7 +16,7 @@ describe('@delete', function () {
     });
 
     //Delete POST
-    it('should return a 200 code after deleting Post Created', function (done) {
+    it('should return a 200 code after deleting Post Created', function () {
          utils.httpDELETE(`/posts/${post.id}`, {})
             .send(
                 {
@@ -35,7 +34,7 @@ describe('@delete', function () {
                     {} //return empty response
                 );
             })
-             .expect(200, done);
+             .expect(200);
 
      });
 
