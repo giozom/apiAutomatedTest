@@ -1,10 +1,27 @@
-describe('@delete', function () {
+'use strict';
 
-     it('should return a 200 code after deleting fake postId 100', function () {
-         utils.httpDELETE('/posts/101', {})
+var hooks = require('../../hooks.js');
+
+describe.only('@delete', function () {
+
+    let post;
+
+    //Publish POST
+    beforeEach(function (done) {
+
+        hooks.createPost()
+            .then(function (_post) {
+                post = _post;
+                done();
+            });
+    });
+
+    //Delete POST
+    it('should return a 200 code after deleting Post Created', function (done) {
+         utils.httpDELETE(`/posts/${post.id}`, {})
             .send(
                 {
-                    id: 101,
+                    id: post.id,
                     title: 'foo',
                     body: 'bar',
                     userId: 1
@@ -18,7 +35,7 @@ describe('@delete', function () {
                     {} //return empty response
                 );
             })
-             .expect(200);
+             .expect(200, done);
 
      });
 
