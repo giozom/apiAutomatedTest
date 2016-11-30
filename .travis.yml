@@ -2,13 +2,16 @@
   "language": "node_js",
   "sudo": true,
   "node_js": "v6.2.2",
-  "before_install": "npm install -g json-server",
+  "before_install": [
+    "npm install -g json-server"
+  ],
+  "install": "json-server data.json",
   "cache": {
     "directories": null
   },
-  "before_script": "json-server data.json",
+  "before_script": null,
   "script": [
-    "npm install && npm test"
+    "npm test"
   ],
   "after_success": null,
   "group": "stable",
