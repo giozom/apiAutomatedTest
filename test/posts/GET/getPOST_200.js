@@ -35,15 +35,5 @@ describe('@get', function () {
             .expect(200, done);
     });
 
-    //Get All Posts
-    it('should return a 200 OK status code for PostID 1 using expect method', function (done) {
-        utils.httpGET('/posts/', {})
-            .set('content-type', 'application/json; charset=utf-8')
-            // .expect(function (res) {
-            //     const response = res.body;
-            //     console.log(response);
-            // })
-            .expect(200, done);
-    });
 
 });

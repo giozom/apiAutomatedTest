@@ -56,15 +56,4 @@ describe('@get', function () {
             .expect(200, done);
     });
 
-    //GET All Users
-    it('should return a 200 OK status code for GET All /users using expect method', function (done) {
-        utils.httpGET('/users/', {})
-            .set('content-type', 'application/json; charset=utf-8')
-            // .expect(function (res) {
-            //     const response = res.body;
-            //     console.log(response);
-            // })
-            .expect(200, done);
-    });
-
 });

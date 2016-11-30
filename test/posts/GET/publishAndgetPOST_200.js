@@ -20,7 +20,7 @@ describe('@get', function () {
         //Get POST
         describe('GET /posts/:id after Post Creation', function () {
             //Using assert method to verify response returned with Post ID from createPost function
-            it('should return a 200 OK status code', function (done) {
+            it('should return a 200 OK status code after Post Creation', function (done) {
                 utils.httpGET(`/posts/${post.id}`, {})
                     .set('content-type', 'application/json; charset=utf-8')
                     .expect(function (res) {

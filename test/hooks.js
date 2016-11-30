@@ -12,7 +12,7 @@ module.exports = {
                 .expect('content-type', 'application/json; charset=utf-8')
                 .expect(function (res) {
                     const response = res.body;
-                    //console.log(response);
+                    console.log(response);
                     expect(response.title).to.equal('foo');
                     expect(response.body).to.equal('bar');
                     expect(response.userId).to.equal(1);
