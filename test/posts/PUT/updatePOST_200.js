@@ -2,7 +2,7 @@
 
 var hooks = require('../../hooks.js');
 
-describe('@put', function () {
+describe.skip('@put', function () {
 
 let post;
 

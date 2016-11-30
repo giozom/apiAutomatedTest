@@ -1,4 +1,4 @@
-describe('@get', function () {
+describe.skip('@get', function () {
 
     //Using assert method
     it('should return a 200 OK status code for User ID 1', function (done) {
