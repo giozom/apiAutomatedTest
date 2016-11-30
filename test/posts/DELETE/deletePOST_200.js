@@ -2,7 +2,7 @@
 
 var hooks = require('../../hooks.js');
 
-describe.only('@delete', function () {
+describe('@delete', function () {
 
     let post;
 
