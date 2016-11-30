@@ -2,3 +2,4 @@
 *.xml
 mochawesome-reports
 *.json
+data.json
