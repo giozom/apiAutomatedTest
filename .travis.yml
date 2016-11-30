@@ -5,7 +5,7 @@
   "before_install": [
     "npm install -g json-server"
   ],
-  "install": null,
+  "install": "npm install",
   "cache": {
     "directories": null
   },
