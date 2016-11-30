@@ -5,14 +5,13 @@
   "before_install": [
     "npm install -g json-server"
   ],
-  "install": "json-server data.json",
+  "install": null,
   "cache": {
     "directories": null
   },
   "before_script": null,
-  "script": [
-    "npm test"
-  ],
+  "script": "json-server data.json",
+  "script": "npm test",
   "after_success": null,
   "group": "stable",
   "dist": "precise",
