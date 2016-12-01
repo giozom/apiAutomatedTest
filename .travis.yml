@@ -7,9 +7,9 @@
     "directories": null
   },
    "before_script": [
-      "npm install -g json-server",
-      "json-server data.json &"
+      "npm install -g json-server"
     ],
+  "services": "json-server data.json"
   "script": [
     "npm test"
   ],
