@@ -3,7 +3,7 @@
   "sudo": true,
   "node_js": "v6.2.2",
   "before_install": [
-    "npm install -g json-server && json-server data.json &"
+    "npm install -g json-server"
   ],
   "install": "npm install",
   "cache": {
@@ -11,7 +11,7 @@
   },
   "before_script": null,
   "script": [
-    "npm test"
+      "npm test"
   ],
   "after_success": null,
   "group": "stable",
