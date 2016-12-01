@@ -2,7 +2,7 @@
 
 var hooks = require('../../hooks.js');
 
-describe('@put', function () {
+describe.only('@put', function () {
 
 let post;
 
@@ -31,7 +31,6 @@ let post;
             .expect(function (res) {
                 const response = res.body;
                 //console.log(response);
-                expect(response.id).to.equal(post.id);
                 expect(response.title).to.equal('candy crush');
                 expect(response.body).to.equal('sodalicious juicy');
                 expect(response.userId).to.equal(1);
