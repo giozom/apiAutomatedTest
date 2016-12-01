@@ -8,7 +8,7 @@
   },
    "before_script": [
       "npm install -g json-server",
-      "json-server data.json &&"
+      "json-server data.json &"
     ],
   "script": [
     "npm test"
