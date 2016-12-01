@@ -1,3 +1,4 @@
+'use strict';
 
 var hooks = require('../../hooks.js');
 
@@ -16,9 +17,10 @@ describe('@delete', function () {
     });
 
     //Delete POST
-    it('should return a 200 code after deleting Post Created', function () {
+    it('should return a 200 code after deleting Post Created', function (done) {
          utils.httpDELETE(`/posts/${post.id}`, {})
-            .send(
+             .set('content-type', 'application/json; charset=utf-8')
+             .send(
                 {
                     id: post.id,
                     title: 'foo',
@@ -26,7 +28,6 @@ describe('@delete', function () {
                     userId: 1
                 }
             )
-            .expect('content-type', 'application/json; charset=utf-8')
             .expect(function (res) {
                 const response = res.body;
                 //console.log(response)
@@ -34,7 +35,7 @@ describe('@delete', function () {
                     {} //return empty response
                 );
             })
-             .expect(200);
+             .expect(200, done);
 
      });
 

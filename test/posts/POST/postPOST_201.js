@@ -4,7 +4,7 @@ describe('@post', function () {
     it('should return a 201 code after posting', function (done) {
         utils.httpPOST('/posts', {})
             .send({title: 'foo', body: 'bar', userId: 1})
-            .expect('content-type', 'application/json; charset=utf-8')
+            .set('content-type', 'application/json; charset=utf-8')
             .expect(function (res) {
                 const response = res.body;
                 //console.log(response);
