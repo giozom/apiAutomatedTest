@@ -1,4 +1,5 @@
 # API Automated Testing using Javascript
+![Alt text](https://travis-ci.org/giozom/apiAutomatedTest.svg?branch=master)
  A JS REST Framework using supertest and other cool libraries
  
 ## Installing json-server
