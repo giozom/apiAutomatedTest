@@ -1,23 +1,20 @@
-
-language:
-  - node_js
-node_js:
-  - v6.2.2
-branches:
-  only:
-  - develop
-before_script:
-  - npm install -g json-server
-install:
-  - npm install
-cache:
-  directories: null
-script:
-  - npm test
-after_success: null
-group:
-  - stable
-dist:
-  - precise
-os:
-  - linux
+{
+  "language": "node_js",
+  "sudo": true,
+  "node_js": "v6.2.2",
+  "before_install": [
+    "npm install -g json-server && json-server data.json &"
+  ],
+  "install": "npm install",
+  "cache": {
+    "directories": null
+  },
+  "before_script": null,
+  "script": [
+    "npm test"
+  ],
+  "after_success": null,
+  "group": "stable",
+  "dist": "precise",
+  "os": "linux"
+}
