@@ -23,7 +23,7 @@
     "konfig": "0.2.1",
     "leche": "2.1.1",
     "lodash": "4.17.19",
-    "messagecheckr": "2.1.3",
+    "messagecheckr": "^2.3.0",
     "mocha": "2.4.5",
     "mocha-junit-reporter": "1.9.1",
     "mocha-multi": "0.7.2",
@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "mochawesome": "^1.4.0",
-    "moment": "^2.14.1",
+    "moment": "^2.29.1",
     "supertest": "^1.1.0"
   }
 }
