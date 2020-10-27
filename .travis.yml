@@ -1,7 +1,7 @@
 {
   "language": "node_js",
   "sudo": true,
-  "node_js": "v6.2.2",
+  "node_js": "v13.3.0",
   "install": "npm install",
   "cache": {
     "directories": null
