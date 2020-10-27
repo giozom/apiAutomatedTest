@@ -3,3 +3,4 @@
 mochawesome-reports
 *.json
 data.json
+node_modules/

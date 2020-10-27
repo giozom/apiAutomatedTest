@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "API Verification for Typicode running locally",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha --reporter mochawesome",
+    "start:server": "json-server data.json",
+    "test": "npm run start:server && ./node_modules/mocha/bin/mocha --reporter mochawesome",
     "test:get": "./node_modules/mocha/bin/mocha --grep @get --reporter mochawesome",
     "test:post": "./node_modules/mocha/bin/mocha --grep @post --reporter mochawesome",
     "test:put": "./node_modules/mocha/bin/mocha --grep @put --reporter mochawesome",
