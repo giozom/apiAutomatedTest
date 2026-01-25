@@ -34,7 +34,7 @@
     "substor": "1.0.0",
     "supertest": "1.1.0",
     "supertest-as-promised": "2.0.2",
-    "validator": "4.7.1",
+    "validator": "13.15.22",
     "xmldoc": "0.3.2"
   },
   "devDependencies": {
