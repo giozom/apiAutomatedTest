@@ -22,7 +22,7 @@
     "chai-things": "0.2.0",
     "konfig": "0.2.1",
     "leche": "2.1.1",
-    "lodash": "4.17.23",
+    "lodash": "4.18.1",
     "messagecheckr": "^2.3.0",
     "mocha": "2.4.5",
     "mocha-junit-reporter": "1.9.1",
